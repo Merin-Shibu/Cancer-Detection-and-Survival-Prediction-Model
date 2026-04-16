@@ -1,0 +1,34 @@
+# Cancer Detection System
+
+# Overview
+
+This project uses machine learning and deep learning techniques to detect cancer from medical images such as histopathology and X-ray scans.
+
+# Features
+
+* Image classification for cancer detection
+* Deep learning models
+* Multiple datasets (histopathology, X-ray)
+* Model training and evaluation
+
+# Technologies
+
+* Python
+* TensorFlow / PyTorch
+* OpenCV
+* NumPy, Pandas
+
+# Project Structure
+
+* app/ → Application code
+* models/ → Trained models
+* notebooks/ → Experiments
+* scripts/ → Training scripts
+
+# Setup
+
+pip install -r requirements
+
+# Note
+
+Datasets are not included due to size. Download separately.
