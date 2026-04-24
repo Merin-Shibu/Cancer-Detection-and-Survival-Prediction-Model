@@ -1,56 +1,89 @@
-#Cancer Detection System using Machine Learning
+# Cancer Detection and Survival Prediction System
 
-#Overview
+## Project Overview
 
-This project focuses on building a machine learning-based system to assist in the early detection of cancer using medical data. The goal is to demonstrate how AI techniques can be applied to healthcare problems for predictive analysis.
+This project is an AI-powered healthcare system that helps in cancer diagnosis using medical image analysis and machine learning.
 
-This project is for educational and research purposes only. It is not intended for real-world medical diagnosis.
+The system performs:
 
-#Problem Statement
+* Benign / Malignant Classification (Only malignant in case of lung cancer)
+* Cancer Type Prediction (Breast Cancer / Lung Cancer)
+* Cancer Stage Prediction
+* Survival Year Estimation
 
-Early detection of cancer plays a critical role in improving survival rates. Traditional diagnostic methods can be time-consuming and dependent on expert analysis. This project aims to explore how machine learning models can help in predicting cancer presence based on input data.
-
-## Solution Approach
-
-* Data preprocessing and cleaning
-* Feature selection and transformation
-* Model training using machine learning algorithms
-* Evaluation of model performance using standard metrics
-
-## Tech Stack
+## Technologies Used
 
 * Python
-* NumPy
-* Pandas
+* Flask
+* Machine Learning
 * Scikit-learn
-* Matplotlib / Seaborn
+* Pandas
+* NumPy
+* OpenCV
+* HTML/CSS
+
+## Workflow
+
+1. Upload medical image
+2. Predict whether cancer is benign or malignant(normal or abnormal)
+3. if abnormal - Identify cancer type
+4. Predict cancer stage
+5. Estimate survival years
+
+## Results
+
+The Cancer Detection and Survival Prediction System successfully performs multi-stage prediction using both medical image analysis and clinical data.
+
+### Stage 1–3: Image-Based Detection
+
+The uploaded medical image is analyzed to detect:
+
+* Normal Tissue / Abnormal Tissue
+* Benign or Malignant Classification
+* Cancer Type Identification (Breast Cancer / Lung Cancer)
+
+Example Output:
+
+* Uploaded Image: Lung Tissue Scan
+* Prediction: Normal Tissue Detected
+
+### Stage 4: Clinical Data-Based Prediction
+
+Using patient clinical details such as age, tumor size, lymph node count, and metastasis status, the system predicts:
+
+* Cancer Stage
+* 5-Year Survival Probability
+
+Example Output:
+
+* Cancer Type: Breast Cancer
+* Predicted Stage: Stage III
+* Predicted 5-Year Survival: Yes (0.55 probability)
+
+### Evaluation Metrics
+
+The model performance was evaluated using:
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Confusion Matrix
+
+The system provides reliable support for early cancer detection, stage prediction, and survival estimation, helping improve healthcare decision-making.
 
 
-## Dataset
 
-The model is trained on a publicly available dataset (e.g., cancer dataset from sklearn / Kaggle).
-Includes features such as cell characteristics and diagnostic indicators.
+## Future Improvements
 
-## Model Performance
+* Doctor Dashboard
+* PDF Medical Report Generation
+* Cloud Deployment
+* Real-time Prediction API
 
-* Model Used: [e.g., Logistic Regression / Random Forest]
-* Accuracy: XX%
-* Evaluation Metrics: Accuracy, Precision, Recall
+## How to Run
 
-## Project Structure
-
-cancer-detection-system/
-│── data/
-│── notebooks/
-│── src/
-│── models/
-│── README.md
-│── requirements.txt
-```
-
-## 🔮 Future Improvements
-
-* Implement deep learning models (CNNs)
-* Deploy as a web application
-* Improve dataset size and quality
-* Add real-time prediction interface
+1. Clone the repository
+2. Install requirements
+3. Run app.py
+4. Open localhost in browser
