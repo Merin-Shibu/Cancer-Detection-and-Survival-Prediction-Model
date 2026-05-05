@@ -3,7 +3,6 @@ numpy
 pandas
 scikit-learn
 tensorflow-cpu
-keras
 opencv-python-headless
 pillow
 
